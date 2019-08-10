@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">tyroler</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_menu_challenges">Challenges</string>
+    <string name="nav_menu_account">Account</string>
+    <string name="nav_menu_map">Map</string>
+</resources>

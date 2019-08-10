@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/challenges_dest">
+
+    <fragment
+        android:id="@+id/challenges_dest"
+        android:name="com.hackathon.tyroler.ChallengeListFragment"
+        android:label="fragment_challenge_list"
+        tools:layout="@layout/fragment_challenge_list">
+        <action
+            android:id="@+id/action_challengeListFragment_to_challengeDetailFragment"
+            app:destination="@id/challenge_detail_dest"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@+id/challenges_dest">
+        </action>
+        <action
+            android:id="@+id/action_challengeListFragment_to_accountFragment"
+            app:destination="@id/account_dest" />
+    </fragment>
+    <fragment
+        android:id="@+id/challenge_detail_dest"
+        android:name="com.hackathon.tyroler.ChallengeDetailFragment"
+        android:label="fragment_challenge_detail"
+        tools:layout="@layout/fragment_challenge_detail" />
+    <fragment
+        android:id="@+id/account_dest"
+        android:name="com.hackathon.tyroler.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+</navigation>
